@@ -1,19 +1,59 @@
 /ADDITIONAL-TOPICS
 FUTURE-TOPICS
-#.gitignore
-
-# macOS Files
-.DS_Store
-
-# Ignore .sh files
-#*.sh
 
 # Terraform Files and Folders
 .terraform
 *.tfstate
 *.tfstate.backup
-#.terraform.lock.hcl
-#*.tfvars
+.terraform.lock.hcl
+*.tfvars
 
 # Ignore .pem files
-#*.pem
+*.pem
+
+# =========================
+# Terraform Core Files
+# =========================
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Variable files (can contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config files
+terraform.rc
+.terraformrc
+
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Sensitive files (AWS etc.)
+# =========================
+*.pem
+*.key
